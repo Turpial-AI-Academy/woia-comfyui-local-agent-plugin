@@ -1,0 +1,23 @@
+{
+    "schema":  "dev.woia.provider-manifest/v1",
+    "version":  "0.5.0",
+    "authoring_profile":  "thin",
+    "scope":  "shared",
+    "departments":  [
+                        "software",
+                        "marketing"
+                    ],
+    "capability":  "comfyui-local",
+    "skill":  "comfyui-local",
+    "kind":  "auxiliary",
+    "source_lineage":  {
+                           "repository":  "Turpial-AI-Academy/comfyui-local-agent-plugin",
+                           "version":  "1.0.0",
+                           "commit":  "68e78aba57b18901a1621f42997ec70ae0fa5bee"
+                       },
+    "migrated_portable_paths":  [
+                                    "mcp.json",
+                                    "plugin-resources/**",
+                                    "skills/**"
+                                ]
+}

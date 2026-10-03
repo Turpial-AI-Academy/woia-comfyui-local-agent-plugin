@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "comfyui": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run", "--project", "${PLUGIN_ROOT}/plugin-resources/runtime",
+        "--python", "${PLUGIN_DATA}/runtime",
+        "--frozen", "--no-sync", "--offline", "--no-python-downloads", "--no-env-file",
+        "python", "-B", "${PLUGIN_ROOT}/plugin-resources/runtime/launcher.py", "official"
+      ],
+      "env": {
+        "UV_PROJECT_ENVIRONMENT": "${PLUGIN_DATA}/runtime",
+        "UV_CACHE_DIR": "${PLUGIN_DATA}/uv-cache",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "cwd": "${PLUGIN_ROOT}"
+    },
+    "comfyui-projects": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run", "--project", "${PLUGIN_ROOT}/plugin-resources/runtime",
+        "--python", "${PLUGIN_DATA}/runtime",
+        "--frozen", "--no-sync", "--offline", "--no-python-downloads", "--no-env-file",
+        "python", "-B", "${PLUGIN_ROOT}/plugin-resources/runtime/launcher.py", "companion"
+      ],
+      "env": {
+        "UV_PROJECT_ENVIRONMENT": "${PLUGIN_DATA}/runtime",
+        "UV_CACHE_DIR": "${PLUGIN_DATA}/uv-cache",
+        "UV_PYTHON_DOWNLOADS": "never",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

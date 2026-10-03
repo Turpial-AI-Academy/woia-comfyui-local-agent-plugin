@@ -1,0 +1,19 @@
+{
+  "schema": "comfyui-local-guide-routes/1",
+  "capability_source": "connected-server-schemas-and-models",
+  "routes": [
+    { "id": "creative-direction", "guide": "../references/CREATIVE_DIRECTION.md", "kind": "guidance" },
+    { "id": "image-generation-editing", "guide": "../references/IMAGES.md", "kind": "conditional-local-modality" },
+    { "id": "video-generation-editing", "guide": "../references/VIDEO.md", "kind": "conditional-local-modality" },
+    { "id": "audio-generation-editing", "guide": "../references/AUDIO_3D.md", "kind": "conditional-local-modality" },
+    { "id": "spatial-assets", "guide": "../references/AUDIO_3D.md", "kind": "conditional-local-modality" },
+    { "id": "editable-workflows", "guide": "../references/WORKFLOWS.md", "kind": "local-tool-operation" },
+    { "id": "project-production", "guide": "../references/PROJECTS.md", "kind": "local-tool-operation" },
+    { "id": "result-review-diagnosis", "guide": "../references/QUALITY_TROUBLESHOOTING.md", "kind": "guidance" },
+    { "id": "capability-discovery", "guide": "../references/DISCOVERY.md", "kind": "local-tool-operation" },
+    { "id": "tool-operation", "guide": "../references/TOOLS.md", "kind": "local-tool-operation" },
+    { "id": "beginner-use", "guide": "../references/QUICKSTART.md", "kind": "guidance" },
+    { "id": "setup-orientation", "guide": "../references/LOCAL_SETUP.md", "kind": "guidance" }
+  ],
+  "companion_tools": ["local_status", "project", "workflow_document", "workflow_edit", "workflow_store", "project_assets", "record_run"]
+}
