@@ -6,7 +6,6 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
