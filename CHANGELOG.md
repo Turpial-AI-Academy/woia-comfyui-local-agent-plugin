@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+**Unreleased main maintenance**
 
 - Remove an unused launcher import with no change to the portable ComfyUI runtime/MCP behavior.
 
