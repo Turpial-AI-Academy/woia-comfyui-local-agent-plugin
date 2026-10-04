@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Remove an unused launcher import with no change to the portable ComfyUI runtime/MCP behavior.
+
 ## 0.5.0 - 2026-10-03
 
 - Establish the shared WOIA v0.5.0 ComfyUI Local lineage.
