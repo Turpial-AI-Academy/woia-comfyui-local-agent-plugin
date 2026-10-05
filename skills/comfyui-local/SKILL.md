@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires a reachable local ComfyUI and the plugin's prepared Python MCP runtime for tool operations. Modalities depend on the installed nodes and models; guidance remains useful without a running server.
 metadata:
   author: Turpial AI Academy
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # comfyui-local
