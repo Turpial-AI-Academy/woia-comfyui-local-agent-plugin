@@ -1,10 +1,12 @@
 # Changelog
 
-**Unreleased main maintenance**
+## 0.5.1 - 2026-10-05
 
 - Restore dependency-free ComfyUI capability/runtime regressions for centralized thin certification and the canonical MIT license text.
 
 - Remove an unused launcher import with no change to the portable ComfyUI runtime/MCP behavior.
+- Restore capability-specific ComfyUI and companion regressions for centralized thin certification.
+- Restore the canonical MIT license text.
 
 ## 0.5.0 - 2026-10-03
 
