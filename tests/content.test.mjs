@@ -7,6 +7,20 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const SKILL_ROOT = path.join(ROOT, "skills", "comfyui-local");
 const ROUTES_FILE = path.join(SKILL_ROOT, "assets", "guide-routes.json");
 
+test("Ads eligibility retains optional local-media scope without paid or contact execution", async () => {
+  const descriptor = JSON.parse(await readFile(path.join(ROOT, "dev.woia", "manifest.json"), "utf8"));
+  assert.deepEqual(descriptor.departments, ["software", "marketing", "ads"]);
+  assert.equal(descriptor.kind, "auxiliary");
+  assert.equal(descriptor.capability, "comfyui-local");
+  const skill = await readFile(path.join(SKILL_ROOT, "SKILL.md"), "utf8");
+  assert.match(skill, /grants no paid campaign, spend, targeting, publication or person-directed contact authority/);
+  assert.match(skill, /qualified local nodes\/models/);
+  assert.match(skill, /Availability alone does not activate/);
+  // Eligibility does not add adapter tools or change prior server entrypoints.
+  const manifest = JSON.parse(await readFile(path.join(ROOT, "mcp.json"), "utf8"));
+  assert.deepEqual(Object.keys(manifest.mcpServers).sort(), ["comfyui", "comfyui-projects"]);
+});
+
 test("every advertised task route resolves to a packaged guide accessible from the skill", async () => {
   const catalog = JSON.parse(await readFile(ROUTES_FILE, "utf8"));
   const skill = await readFile(path.join(SKILL_ROOT, "SKILL.md"), "utf8");

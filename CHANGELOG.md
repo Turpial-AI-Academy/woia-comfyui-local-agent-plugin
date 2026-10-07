@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.2 - 2026-10-07
+
+- Extend optional qualified local-media consumption to Ads, preserving Software/Marketing eligibility and the complete MCP/runtime API.
+- Keep paid/publication/person-contact effects outside this creative provider.
+
 ## 0.5.1 - 2026-10-05
 
 - Restore dependency-free ComfyUI capability, runtime and companion regressions for centralized thin certification.
