@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires a reachable local ComfyUI and the plugin's prepared Python MCP runtime for tool operations. Modalities depend on the installed nodes and models; guidance remains useful without a running server.
 metadata:
   author: Turpial AI Academy
-  version: "0.5.1"
+  version: "0.5.2"
 ---
 
 # comfyui-local
@@ -15,6 +15,10 @@ metadata:
 Turn the user's creative intent into usable media and a reproducible, visually editable ComfyUI project. Guide beginners through one clear route; let experienced users keep their established workflows. Respond in the user's language. This capability is independent of any methodology or orchestrator.
 
 Use **DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT** for the affected work. Reuse a healthy local workflow for a small requested change. Expand discovery for a new modality, unknown nodes, broken data flow, profile ambiguity or an irreversible operation. Preserve unrelated workflows, files and durable evidence.
+
+## Eligible department consumption
+
+Software, Marketing and Ads may select this optional shared provider only for a concrete media-generation/editing task and qualified local nodes/models. Ads consumption preserves the same local creative/runtime contract; it grants no paid campaign, spend, targeting, publication or person-directed contact authority. Hand off finished creative evidence to the owning department/provider. Availability alone does not activate the capability.
 
 ## Shared rules
 

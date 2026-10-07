@@ -1,11 +1,12 @@
 {
   "schema": "dev.woia.provider-manifest/v1",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "authoring_profile": "thin",
   "scope": "shared",
   "departments": [
     "software",
-    "marketing"
+    "marketing",
+    "ads"
   ],
   "capability": "comfyui-local",
   "skill": "comfyui-local",
