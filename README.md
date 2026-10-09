@@ -1,8 +1,7 @@
 # woia-comfyui-local
 
-Shared WOIA v0.5.0 ComfyUI Local provider for Software, Marketing and Ads.
+Shared WOIA v0.5.6 ComfyUI Local provider for Software, Marketing and Ads.
 
-Portable capability/runtime content is migrated preserve-first from Turpial-AI-Academy/comfyui-local-agent-plugin@1.0.0 at exact source commit 68e78aba57b18901a1621f42997ec70ae0fa5bee.
 
 - Primary skill: $comfyui-local
 - Includes the portable MCP/runtime resources from the source plugin.
@@ -10,3 +9,6 @@ Portable capability/runtime content is migrated preserve-first from Turpial-AI-A
 - Activation is evidence-triggered; plugin presence, GPU presence or local models alone never activate it.
 
 Generic certification/release tooling lives in woia-ecosystem.
+## Maintenance
+
+Edit only this canonical repository. Keep `plugin.json`, `package.json` and `dev.woia/manifest.json` versions aligned. From the canonical WOIA Ecosystem repository, run `mise run plugin:certify-thin --repo <absolute-plugin-repository>`, then use its release preparation/publication tasks. Install and update consumers from immutable published artifacts; keep Project personalization in overlays.

@@ -5,10 +5,20 @@
       "type": "stdio",
       "command": "uv",
       "args": [
-        "run", "--project", "${PLUGIN_ROOT}/plugin-resources/runtime",
-        "--python", "${PLUGIN_DATA}/runtime",
-        "--frozen", "--no-sync", "--offline", "--no-python-downloads", "--no-env-file",
-        "python", "-B", "${PLUGIN_ROOT}/plugin-resources/runtime/launcher.py", "official"
+        "run",
+        "--project",
+        "${PLUGIN_ROOT}/plugin-resources/runtime",
+        "--python",
+        "${PLUGIN_DATA}/runtime",
+        "--frozen",
+        "--no-sync",
+        "--offline",
+        "--no-python-downloads",
+        "--no-env-file",
+        "python",
+        "-B",
+        "${PLUGIN_ROOT}/plugin-resources/runtime/launcher.py",
+        "official"
       ],
       "env": {
         "UV_PROJECT_ENVIRONMENT": "${PLUGIN_DATA}/runtime",
@@ -22,10 +32,20 @@
       "type": "stdio",
       "command": "uv",
       "args": [
-        "run", "--project", "${PLUGIN_ROOT}/plugin-resources/runtime",
-        "--python", "${PLUGIN_DATA}/runtime",
-        "--frozen", "--no-sync", "--offline", "--no-python-downloads", "--no-env-file",
-        "python", "-B", "${PLUGIN_ROOT}/plugin-resources/runtime/launcher.py", "companion"
+        "run",
+        "--project",
+        "${PLUGIN_ROOT}/plugin-resources/runtime",
+        "--python",
+        "${PLUGIN_DATA}/runtime",
+        "--frozen",
+        "--no-sync",
+        "--offline",
+        "--no-python-downloads",
+        "--no-env-file",
+        "python",
+        "-B",
+        "${PLUGIN_ROOT}/plugin-resources/runtime/launcher.py",
+        "companion"
       ],
       "env": {
         "UV_PROJECT_ENVIRONMENT": "${PLUGIN_DATA}/runtime",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "woia-comfyui-local",
-  "version": "0.5.2",
+  "version": "0.5.6",
   "description": "Create, edit, run, organize and review local ComfyUI workflows and media using the official MCP and portable project tools.",
   "author": {
     "name": "Turpial AI Academy",
