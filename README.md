@@ -1,6 +1,6 @@
 # woia-comfyui-local
 
-Shared WOIA v0.5.6 ComfyUI Local provider for Software, Marketing and Ads.
+Shared WOIA v0.5.7 ComfyUI Local provider for Software, Marketing and Ads.
 
 
 - Primary skill: $comfyui-local
